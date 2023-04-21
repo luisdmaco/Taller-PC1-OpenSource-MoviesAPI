@@ -8,6 +8,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { TableComponent } from './component/table/table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MaterialModule } from 'shared/material.module';
+//import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
