@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
+
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesService {
 
-  baseUrl = 'https://api.themoviedb.org/3/movie';
-
-  apiKey = 'c450957bf05956fb9429ec0f277bccf5';
+  baseUrl = environment.baseUrl;
+  apiKey = environment.apiKey;
 
   constructor(private http: HttpClient) { }
 
